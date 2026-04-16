@@ -6,5 +6,6 @@ test("fIXTURES", async ({browser, browserName}) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://www.google.com/");
+    console.log(await page.title());
 
 })
