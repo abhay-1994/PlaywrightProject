@@ -16,7 +16,7 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-   reporter: [['html', { open: 'never' }]],
+   reporter: [['html', { open: 'never', host: '0.0.0.0' }]],
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
