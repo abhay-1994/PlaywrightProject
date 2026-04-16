@@ -20,7 +20,7 @@ test("BROWSER CONTROL", async ({ page, browser }) => {
 });
 
 test("instance", async()=>{
-    //let browser =await chromium.launch()//This will launch a new  chromium browser instance
+    let browser =await chromium.launch()//This will launch a new  chromium browser instance
     
     let context =await browser.newContext()
     let page =await context.newPage()
